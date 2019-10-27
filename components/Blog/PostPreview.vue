@@ -14,25 +14,25 @@
 
 <script>
 	export default {
-  props: {
-    title: {
-		type: String,
-		required: true
-    },
-    excerpt: {
-		type: String,
-		required: true
-    },
-    thumbnailImage: {
-		type: String,
-		required: true
-    },
-    id: {
-		type: String,
-		required: true
-    }
-  }
-}
+		props: {
+			title: {
+				type: String,
+				required: true
+			},
+			excerpt: {
+				type: String,
+				required: true
+			},
+			thumbnailImage: {
+				type: String,
+				required: true
+			},
+			id: {
+				type: String,
+				required: true
+			}
+		}
+	}
 </script>
 
 <style scoped>
