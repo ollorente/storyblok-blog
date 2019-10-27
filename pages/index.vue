@@ -13,29 +13,29 @@
 <script>
 	import PostPreview from '@/components/Blog/PostPreview.vue'
 
-export default {
-    components: {
-        PostPreview
-    },
-    data () {
-        return {
-            posts: [
-                {
-                    title: 'A new beginning',
-                    previewText: 'This will be awesome, dont miss it!.',
-                    thumbnailUrl: 'https://res.cloudinary.com/dbszizqh4/image/upload/v1571710286/gastronomia/oy9ux1kimcfbaolt54fi.jpg',
-                    id: 'a-new-beginning'
-                },
-                {
-                    title: 'A Second beginning',
-                    previewText: 'This will be awesome, dont miss it!.',
-                    thumbnailUrl: 'https://res.cloudinary.com/dbszizqh4/image/upload/v1571669152/noticias/p0rgtienlksh9h5r7oba.jpg',
-                    id: 'a-second-beginning'
-                }
-            ]
-        }
-  }
-}
+	export default {
+		components: {
+			PostPreview
+		},
+		data () {
+			return {
+				posts: [
+					{
+						title: 'A new beginning',
+						previewText: 'This will be awesome, dont miss it!.',
+						thumbnailUrl: 'https://res.cloudinary.com/dbszizqh4/image/upload/v1571710286/gastronomia/oy9ux1kimcfbaolt54fi.jpg',
+						id: 'a-new-beginning'
+					},
+					{
+						title: 'A Second beginning',
+						previewText: 'This will be awesome, dont miss it!.',
+						thumbnailUrl: 'https://res.cloudinary.com/dbszizqh4/image/upload/v1571669152/noticias/p0rgtienlksh9h5r7oba.jpg',
+						id: 'a-second-beginning'
+					}
+				]
+			}
+	}
+	}
 </script>
 
 <style scoped>
