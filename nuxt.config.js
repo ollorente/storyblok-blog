@@ -1,3 +1,4 @@
+const axios = require('axios')
 
 export default {
 	mode: 'universal',
@@ -50,6 +51,23 @@ export default {
 			}
 		]
 	],
+	/*
+	** Build generate
+	*/
+	generate: {
+		routes: function() {
+			return axios.get('https://api.storyblok.com/v1/cdn/stories?version=published&token=K04CUrSAwFb0zPJzkYVf6wtt&start_with=blog&cv=' + Math.floor(Date.now() / 1e3))
+				.then(res => {
+					const blogPosts = res.data.stories.map(bp => bp.full_slug)
+					return [
+						'/',
+						'/blog',
+						'/about',
+						...blogPosts
+					]
+				})
+		}
+	},
 	/*
 	** Build configuration
 	*/
