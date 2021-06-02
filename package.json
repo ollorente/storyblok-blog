@@ -11,6 +11,14 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+<<<<<<< HEAD
     "nuxt": "^2.15.6"
   }
+=======
+    "nuxt": "^2.0.0",
+    "serialize-javascript": "^3.1.0",
+    "storyblok-nuxt": "^1.0.2"
+  },
+  "devDependencies": {}
+>>>>>>> f5f4c81671fd518928644558cbf63a4f594a72da
 }
